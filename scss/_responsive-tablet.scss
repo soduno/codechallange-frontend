@@ -1,0 +1,107 @@
+@media screen and (min-width: 767px) and (max-width: 1200px) {
+  main {
+    .main-header {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      gap: 30px;
+      padding: 20px 0;
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+      }
+
+      &__logo {
+        width: 120px;
+      }
+
+      &__nav {
+        ul {
+          display: flex;
+          gap: 30px;
+        }
+      }
+    }
+
+    .container {
+      max-width: 90%;
+      margin: auto;
+    }
+
+    .section-hero {
+      height: 450px;
+
+      &__wrapper {
+        flex-grow: 1;
+        align-items: center;
+      }
+    }
+
+    .section-services {
+      &__box {
+        height: 250px;
+
+        &--content {
+          text-align: center;
+        }
+      }
+    }
+
+    .section-large {
+      padding: 100px 0;
+
+      .btn {
+        margin-top: 10px;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+    }
+
+    .section-column {
+      .container {
+        gap: 50px;
+      }
+
+      &.picture {
+        margin: 70px 0;
+      }
+
+      &#sectionContact {
+        padding-top: 70px;
+        padding-bottom: 100px;
+
+        br {
+          display: none;
+        }
+      }
+
+      &__text {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        .btn {
+          margin-top: 20px;
+        }
+      }
+    }
+
+    footer {
+      .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        text-align: center;
+
+        gap: 50px;
+      }
+    }
+  }
+}

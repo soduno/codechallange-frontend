@@ -1,0 +1,28 @@
+.btn {
+  text-transform: uppercase;
+  border-radius: 10px;
+  border: 0;
+  font-weight: 600;
+  width: fit-content;
+
+
+  &.btn-large {
+    padding: 12px 45px;
+    font-size: $textMd;
+  }
+
+  &.btn-default {
+    padding: 13px 30px;
+    font-size: $textBase;
+  }
+
+  &.btn-dark {
+    background-color: #000;
+    color: #fff;
+  }
+
+  &.btn-light {
+    background-color: #fff;
+    color: #000;
+  }
+}

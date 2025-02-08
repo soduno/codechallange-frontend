@@ -1,0 +1,56 @@
+@media screen and (min-width: 1200px) {
+  :root {
+    --headerSm: 2.18em;
+    --headerBase: 3.75rem;
+    --headerXl: 5rem;
+    --text-lg: 1.56rem;
+    --text-md: 1.12rem;
+    --text-base: 1rem;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  :root {
+    --headerSm: 2.0em;
+    --headerXl: 3rem;
+    --headerBase: 2.5em;
+    --text-base: 1rem;
+    --text-md: 1.12rem;
+    --text-lg: 1.0rem;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  :root {
+    --headerSm: 1.8rem;
+    --headerXl: 2.5rem;
+    --headerBase: 2.0rem;
+    --text-base: 0.9rem;
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1620px) {
+  :root {
+    --headerXl: 3.5rem;
+  }
+}
+
+$headerSm: var(--headerSm);
+$headerBase: var(--headerBase);
+$headerXl: var(--headerXl);
+$textLg: var(--text-lg);
+$textMd: var(--text-md);
+$textBase: var(--text-base);
+
+$fontBase: 'Poppins', sans-serif;
+$fontHeader: 'DM Serif Display', sans-serif;
+
+
+/*
+  Colors
+*/
+
+$bgDark: #000;
+$bgLight: #fff;
+$bgYellow: #f8dd9f;

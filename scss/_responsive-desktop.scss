@@ -1,0 +1,168 @@
+/*
+  Share both tablet and Desktop
+*/
+@media screen and (min-width: 767px) {
+  #mobileMenuToggle {
+    display: none;
+  }
+
+  main {
+    .section-column {
+      & > .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+
+      &__illustration {
+        height: 300px;
+      }
+    }
+
+    .section-services {
+      display: grid;
+      align-items: center;
+      justify-content: center;
+      grid-template-columns: 1fr 1fr 1fr;
+
+      &__box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &--content {
+          flex-grow: 1;
+        }
+      }
+    }
+
+    footer {
+      padding: 92px 0;
+    }
+  }
+}
+
+/*
+  Desktop explicitly
+*/
+@media screen and (min-width: 1200px) {
+  main {
+
+    .main-header {
+      .container {
+        padding: 19px 0;
+
+        display: grid;
+        align-items: center;
+        grid-template-columns: 130px 1fr 235px;
+
+        ul {
+          display: flex;
+          justify-content: center;
+          gap: 60px;
+
+          li {
+            a {
+              font-size: $textMd;
+            }
+          }
+        }
+      }
+    }
+
+    .section-hero {
+      height: 927px;
+
+      &__wrapper {
+        flex-grow: 1;
+      }
+    }
+
+    .section-large {
+      padding: 165px 0;
+      text-align: center;
+
+      .btn {
+        margin-top: 30px;
+      }
+    }
+
+    .section-column.picture .section-column__illustration {
+      height: 630px;
+    }
+
+    .section-column {
+      &.picture {
+        .container {
+          align-items: center;
+          gap: 90px;
+        }
+
+        padding: 180px 0;
+      }
+
+      &__text {
+
+        .btn {
+          margin-top: 40px;
+        }
+      }
+    }
+
+    #sectionContact {
+      padding: 177px 0;
+
+      .section-title {
+        font-size: $headerXl;
+      }
+
+      strong {
+        line-height: 30px;
+      }
+
+      .container {
+        gap: 100px;
+      }
+    }
+
+    footer {
+      .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1620px) {
+  main {
+    .container {
+      max-width: 1560px;
+      margin: auto;
+    }
+  }
+}
+
+@media screen and (min-width: 1620px) {
+  main {
+    .section-services {
+      &__box {
+        height: 800px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1620px) {
+  main {
+    .container {
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .section-services {
+      &__box {
+        height: 500px;
+      }
+    }
+  }
+}
